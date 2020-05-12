@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <form method="get" action="#">
+        <p>Vul het registratie formulier in. Velden met een * zijn verplicht.</p>
+        <fieldset>
+            <legend>Accountgegevens</legend>
+            <div>
+                <label for="firstname">Voornaam <span> * </span></label>
+                <input id="firstname" type="text" name="firstname" required="required">
+            </div>
+            <div>
+                <label for="lastname">Naam <span> * </span></label>
+                <input id="lastname" type="text" name="lastname" required="required">
+            </div>
+            <div>
+                <label for="email">Email adres <span> * </span></label>
+                <input id="email" type="text" name="email" required="required" placeholder=" name@example.com">
+            </div>
+            <div>
+                <label for="password1">Paswoord <span> * </span></label>
+                <input id="password1" type="text" name="password1" required="required">
+            </div>
+            <div>
+                <label for="password2">Bevestig paswoord <span> * </span></label>
+                <input id="password2" type="text" name="password2" required="required">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Adresgegevens</legend>
+            <div>
+                <label for="adress1">Adres 1 <span> * </span></label>
+                <input id="adress1" type="text" name="adress1" required="required">
+            </div>
+            <div>
+                <label for="adress2">Adres 2</label>
+                <input id="adress2" type="text" name="adress2">
+            </div>
+            <div>
+                <label for="city">Stad <span> * </span></label>
+                <input id="city" type="text" name="city" required="required">
+            </div>
+            <div>
+                <label for="postalcode">Postcode <span> * </span></label>
+                <input id="postalcode" type="text" name="postalcode" required="required">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <div>
+                <label for="birthday">Geboortedatum</label>
+                <input id="birthday" type="date" name="birthday" placeholder="dd/mm/jjjj">
+            </div>
+            <div>
+                <label for="satisfied">Hoe tevreden ben je ?</label>
+                <input type="range" min="0" max="10" step="1" value="5" name="satisfied" />
+            </div>
+            <div>
+                <input type="radio" name="sex" value="man" id="male">
+                <label for="male">Man</label>
+            </div>
+            <div>
+                <input type="radio" name="sex" value="vrouw" id="female">
+                <label for="female">Vrouw</label>
+            </div>
+            <div>
+                <label for="modules">Kies een module</label>
+                <div id="ModulePicker">
+                    <select name="modules" id="modules" size=4>
+                        <option value="1">Multimedia</option>
+                        <option value="2">Databanken</option>
+                        <option value="3" selected>Programmeren 3</option>
+                        <option value="4">Programmeren 4</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <div id="Verzenden">
+            <input id="buttonverzenden" type="submit" value="Verzenden" name="submit">
+        </div>
+    </fieldset>
+
+</body>

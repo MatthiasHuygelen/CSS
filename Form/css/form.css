@@ -1,0 +1,48 @@
+body{
+    width: 590px;
+    height: 700px;
+    background-color: #f4fce7;
+}
+body fieldset{
+    background-color: #d1efe3;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 0.7em;
+    font-size : 18px;
+}
+
+body fieldset label{
+    width: 25%;
+    font-size : 15px;
+    display: inline-block;
+    padding-bottom: 2%;
+}
+
+body fieldset input{
+    width: 71%;
+    float: right;
+    padding-bottom: 1%;
+    border-radius: 1em;
+    border-style: none;
+}
+body fieldset select{
+    width: 38%;
+    float: left;
+    
+}
+#ModulePicker{
+    float: right;
+    width: 63%;
+    padding-right: 9%;
+}
+#Verzenden{
+    width: 60%;
+}
+#buttonverzenden{
+    width: 40%;
+    background-color: #8abeb2;
+    border-radius: 0.5em;
+    border-color: #7ecdd4;
+    border-style: solid;
+    color:#ffffff;
+}
